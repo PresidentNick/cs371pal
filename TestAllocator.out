@@ -75,15 +75,15 @@ Running main() from gtest_main.cc
 ==18985==
 ==18985== For counts of detected and suppressed errors, rerun with: -v
 ==18985== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-File 'TestAllocator.c++'
-Lines executed:68.06% of 72
-Branches executed:43.62% of 376
-Taken at least once:22.87% of 376
-Calls executed:39.30% of 369
-Creating 'TestAllocator.c++.gcov'
 File 'Allocator.h'
 Lines executed:69.57% of 23
 Branches executed:33.33% of 24
 Taken at least once:16.67% of 24
 Calls executed:30.77% of 26
 Creating 'Allocator.h.gcov'
+File 'TestAllocator.c++'
+Lines executed:68.06% of 72
+Branches executed:43.62% of 376
+Taken at least once:22.87% of 376
+Calls executed:39.30% of 369
+Creating 'TestAllocator.c++.gcov'
