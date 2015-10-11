@@ -77,6 +77,7 @@ class Allocator {
          * O(1) in space
          * O(1) in time
          * <your documentation>
+         * https://code.google.com/p/googletest/wiki/AdvancedGuide#Private_Class_Members
          */
         FRIEND_TEST(TestAllocator2, index);
         int& operator [] (int i) {
@@ -93,10 +94,7 @@ class Allocator {
          * throw a bad_alloc exception, if N is less than sizeof(T) + (2 * sizeof(int))
          */
         Allocator () {
-            a[0] = 0;         // replace!
-            a[1] = 0;
-            a[2] = 0;
-            a[3] = 0;
+            (*this)[0] = 0; // replace!
             // <your code>
             assert(valid());}
 
@@ -120,8 +118,7 @@ class Allocator {
         pointer allocate (size_type n) {
             // <your code>
             assert(valid());
-            std::cout << 0 << std::endl;
-            return 0;}                   // replace!
+            return nullptr;}             // replace!
 
         // ---------
         // construct
